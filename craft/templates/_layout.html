@@ -1,0 +1,83 @@
+{% set staticVersion = 1 %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{metaData.ogTitle}}</title>
+	<link rel="home" href="{{ siteUrl }}" />
+	<link href="https://file.myfontastic.com/QBheUdw6NsmDes5tHeC5Y7/icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="{{ craft.config.rootUrl }}/build/css/main.css?v={{ staticVersion }}">
+	<meta name="description" content="{{ metaData.description }}">
+	<meta name="keywords" content="{{ metaData.keywords}}" />
+
+	<!-- Facebook OG Tags -->
+	<meta property="fb:app_id" content="1389219208024971" /> 
+	<meta property="og:title" name="og:title" content="{{metaData.ogTitle}}" />
+	<meta property="og:description" name="og:description" content="{{ metaData.ogDescription }}" />
+	<meta property="og:url" name="og:url" content="http:{{ siteUrl }}" />
+	<meta property="og:type" name="og:type" content="website" />
+	<meta property="og:site_name" name="og:site_name" content="Violet" />
+	{% if metaData.ogImage|length > 0%}
+	  <meta property="og:image" name="og:image" content="http:{{ metaData.ogImage.first().url }}" />
+	{% endif %}
+
+	<!-- Twitter -->
+	<meta name="twitter:title" content="{{metaData.ogTitle}}">
+	<meta name="twitter:description" content="{{ metaData.ogDescription }}">
+	<meta name="twitter:image" content="http:{{ metaData.ogImage.first().url }}">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="{{ craft.config.rootUrl }}/assets/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ craft.config.rootUrl }}/assets/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ craft.config.rootUrl }}/assets/icons/apple-icon-72x72.png">    
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ craft.config.rootUrl }}/assets/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ craft.config.rootUrl }}/assets/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{ craft.config.rootUrl }}/assets/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ craft.config.rootUrl }}/assets/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{ craft.config.rootUrl }}/assets/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ craft.config.rootUrl }}/assets/icons/apple-icon-180x180.png">
+
+	<link rel="icon" type="image/png" href="{{ craft.config.rootUrl }}/assets/icons/favicon-96x96.png">
+</head>
+
+<body>
+	<div id="container">
+		<nav class="SidebarNav">
+			<div class="SidebarNav__Inner">
+				<div class="SidebarNav__Header">
+					<img src="{{craft.config.environmentVariables.assetsUrl}}assets/logos/violet_logo.svg" alt="Violet" />
+				</div>
+				<div class="SidebarNav__Info">
+					<h3>{{contact.heading}}</h3>
+					{{contact.body}}
+				</div>
+				{% if contact.shopLink is not empty %}
+				<div class="SidebarNav__Footer">
+					{{contact.visit}}
+					<a href="{{contact.shopLink}}" target="_blank">Click here</a>
+				</div>
+				{% endif %}
+			</div>
+		</nav>
+		<main id="content" role="main">
+			{% block content %}
+				<p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> yet.</p>
+				<p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance"></p>
+			{% endblock %}
+		</main>
+	</div>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-91268541-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	<script type="text/javascript" src="{{ craft.config.rootUrl }}/build/js/main.js?v={{ staticVersion }}"></script>
+</body>
+</html>

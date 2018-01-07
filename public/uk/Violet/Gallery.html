@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Violet | Gallery</title>
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!--Custom CSS-->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+    @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+    * {
+        box-sizing: border-box;
+    }
+
+    /*html,*/
+    body {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .slideShow {
+        height: 100%;
+        width: 30%;
+        min-width: 750px;
+        margin: 0 auto;
+        overflow: visible;
+    }
+    .slideShow__container {
+        /*height: 100%;*/
+        height: 50.58vw;
+        width: 100%;
+        list-style: none;
+        display: block;
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+        font-size: 0;
+        line-height: 0;
+        position: relative;
+    }
+    .slideShow__slide {
+        height: 50.58vw;
+        width: 100%;
+        display: inline-block;
+        position: relative;
+    }
+    .slideShow__image {
+        display: block;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    .slideShow__image::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /*background-image: -webkit-linear-gradient(225deg, transparent 0%, rgba(0, 0, 0, 0.5) 100%);*/
+        /*background-image: linear-gradient(225deg, transparent 0%, rgba(0, 0, 0, 0.5) 100%);*/
+    }
+
+    .slideShow__next, .slideShow__prev {
+        top: 50%;
+        color: #fff;
+    }
+    .slideShow__next i, .slideShow__prev i {
+        display: block;
+        float: left;
+    }
+    .slideShow__next {
+        right: 1rem;
+        cursor: pointer;
+    }
+    .slideShow__prev {
+        left: 1rem;
+        cursor: pointer;
+    }
+</style>
+<body>
+<div class="container-fluid" style="background-color: rgba(15, 15, 15, 0.95);height: 142vw">
+    <div class="row" style="margin-top: 27.96vw">
+        <div class="col-md-1 col-md-offset-11">
+            <img src="assets/images/white_2017-10-26/white.png" style="width: 1.46vw;height: 1.46vw"/>
+        </div>
+    </div>
+    <div class="row">
+        <!--Slider-->
+        <div class="slideShow">
+            <ul class="slideShow__container">
+                <li class="slideShow__slide">
+                    <div class="slideShow__image" style="display: flex;justify-content: center">
+                        <img src="assets/images/fp-5-b-3004-10-m-rgb-1_2017-10-26/fp-5-b-3004-10-m-rgb-1.png" style="width: 32.06vw;height: 50.58vw" alt/>
+                    </div>
+                </li>
+                <li class="slideShow__slide">
+                    <div class="slideShow__image" style="display: flex;justify-content: center">
+                        <img src="assets/images/fp-5-b-9866-13-m-rgb-6_2017-10-23/fp-5-b-9866-13-m-rgb-6.png" style="width: 32.06vw;height: 50.58vw" alt/>
+                    </div>
+                </li>
+                <li class="slideShow__slide">
+                    <div class="slideShow__image" style="display: flex;justify-content: center">
+                        <img src="https://c2.staticflickr.com/8/7723/17172064766_edf36b7b51_k.jpg" style="width: 32.06vw;height: 50.58vw" alt/>
+                    </div>
+                </li>
+                <li class="slideShow__slide">
+                    <div class="slideShow__image" style="display: flex;justify-content: center">
+                        <img src="https://c1.staticflickr.com/9/8714/17164716126_5494165d77_k.jpg" style="width: 32.06vw;height: 50.58vw" alt/>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+        <!--End Slider-->
+    </div>
+
+    <div class="row" style="display: flex;flex-direction: row;justify-content: center;align-items: center;">
+        <div class="slideShow__prev" style="margin-right: 15vw;"><img src="assets/images/white_prev/white.png" style="width: 1.7vw;height: 1.17vw" /></div>
+        <div><span class="gallery_layer"><span id="num">01</span> / 04</span></div>
+        <div class="slideShow__next" style="margin-left: 15vw;"><img src="assets/images/white_next/white.png" style="width: 1.7vw;height: 1.17vw" /></div>
+    </div>
+    <div class="row" style="margin-top: 3.29vw">
+        <div class="col-md-4 col-md-offset-4" style="display: flex;">
+            <span class="gallery_Lorem-ipsum-dolor-si">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+        </div>
+    </div>
+</div>
+</body>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+<!--<script src='http://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText.min.js'></script>-->
+<script type="text/javascript">
+    function debounce(a,b,c){var d;return function(){var e=this,f=arguments;clearTimeout(d),d=setTimeout(function(){d=null,c||a.apply(e,f)},b),c&&!d&&a.apply(e,f)}}
+
+    var SlideShow = function() {
+
+        var
+            slider,
+            slide,
+            nextButton,
+            prevButton,
+            slideAmount,
+            sliderWidth,
+            clickCounter,
+            slideCounter;
+            num;
+
+        var _init = function () {
+            slider        = document.getElementsByClassName('slideShow__container')[0];
+            slide         = document.getElementsByClassName('slideShow__slide');
+            slideAmount   = slide.length;
+            nextButton    = document.getElementsByClassName('slideShow__next')[0];
+            prevButton    = document.getElementsByClassName('slideShow__prev')[0];
+            sliderWidth   = parseInt(getComputedStyle(slider).width);
+            clickCounter  = 0;
+            slideCounter  = 0;
+            num = document.getElementById('num');
+
+            _eventHandlers();
+            _navButtons();
+            _animateSlideIn(slideCounter);
+        }
+
+        var _eventHandlers = function() {
+            nextButton.addEventListener('click', _slideNext, false);
+            prevButton.addEventListener('click', _slidePrev, false);
+            window.addEventListener('resize', _resize, false);
+        }
+
+        var _navButtons = function () {
+            if (clickCounter === 0 ) {
+                prevButton.classList.add('is-inactive')
+            } else {
+                prevButton.classList.remove('is-inactive')
+            }
+        }
+
+        var _slideNext = function() {
+            clickCounter++;
+            slideCounter = clickCounter-1;
+            if(clickCounter >= slideAmount) {
+                clickCounter = 0;
+                slideCounter = slideAmount - 1;
+            }
+            num.innerText = clickCounter+1;
+            console.log(clickCounter+1);
+            var tl = new TimelineLite();
+            tl
+                .add(_animateSlideOut(slideCounter))
+                .to(slider, .9, {x:-clickCounter*sliderWidth, ease: Power2.easeOut})
+                .add(_animateSlideIn(clickCounter))
+            _navButtons();
+        }
+
+        var _slidePrev = function() {
+
+            if(clickCounter > 0 ) {
+                clickCounter--;
+                num.innerText = clickCounter+1;
+                console.log(clickCounter+1);
+                // _getPreviousSlide(clickCounter +1)
+                var tl = new TimelineLite();
+                tl
+                    .add(_animateSlideOut(clickCounter+1))
+                    .to(slider, .9, {x:'+='+sliderWidth, ease: Power2.easeOut}, '-=0.2')
+                    .add(_animateSlideIn(clickCounter));
+
+            }
+
+            _navButtons();
+        }
+
+        var _animateSlideIn = function(index) {
+            var currentSlide  = slide[index];
+            var image         =  currentSlide.children[0];
+
+            var splitTitle = new SplitText(title);
+            var revertTitle = function() {
+                splitTitle.revert();
+            }
+
+            TweenLite.set(title, {perspective:400});
+
+            var tl            = new TimelineLite({onComplete:revertTitle });
+            tl
+                .set(title, {opacity: 1})
+                .staggerFrom(splitTitle.chars, 0.8, {
+                    opacity:0,
+                    scale:0,
+                    y:80,
+                    rotationX:180,
+                    transformOrigin:"0% 50% -50",
+                    ease:Back.easeOut
+                }, 0.03)
+                .fromTo(subTitle, 0.6, {y:50, opacity: 0},{y:0, opacity:1}, '-=0.3')
+                .to(image, 0.4, {scale: 1, ease:Power2.easeOut},'-=0.6' )
+            return tl;
+        }
+
+        var _animateSlideOut = function(index) {
+            var currentSlide = slide[index];
+            var image =  currentSlide.children[0];
+
+            var tl = new TimelineLite();
+            tl
+                .to(image, 0.4, {scale: 0.8, ease:Power2.easeIn}, '-=0.3' )
+            return tl;
+        }
+
+        var _resize = debounce(function() {
+            sliderWidth   = parseInt(getComputedStyle(slider).width);
+            sliderOffset = sliderWidth * clickCounter;
+            slider.style.transform = 'matrix(1, 0, 0, 1, -'+ sliderOffset + ', 0)'
+        }, 50)
+
+        return {
+            init: _init
+        }
+
+    }();
+
+    SlideShow.init();
+</script>
+</html>

@@ -1,0 +1,30 @@
+pipelines:
+  default:
+    - step:
+        script:
+          - echo $CodeCommitKey > ~/.ssh/id_rsa.tmp
+          - base64 -d ~/.ssh/id_rsa.tmp > ~/.ssh/codecommit_rsa
+          - chmod 400 ~/.ssh/codecommit_rsa
+          - echo $CodeCommitConfig > ~/.ssh/config.tmp
+          - base64 -d  ~/.ssh/config.tmp > ~/.ssh/config
+          - set +e
+          - ssh -o StrictHostKeyChecking=no $CodeCommitHost
+          - set -e  
+          - echo "getting commit comment.."
+          - commit_c=$(git log -1 --pretty=%B)
+          - echo $commit_c
+          - echo "cloning codecommit"
+          - cd ..          
+          - mkdir codecommit1        
+          - git clone --branch="master" ssh://$CodeCommitRepo codecommit1  
+          - rm -rf codecommit1/*        
+          - rm -rf build/.git
+          - cp -a build/. codecommit1
+          - cd codecommit1
+          - git config user.email "colombialab@hotmail.com"
+          - git config user.name "rperdomo"       
+          - git add -A          
+          - git commit --allow-empty -m "$commit_c"
+          - git push -f origin master
+          - rm -rf build
+          - rm -rf codecommit1                 

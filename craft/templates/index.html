@@ -1,0 +1,52 @@
+{% extends "_layout" %}
+
+{% block content %}
+
+{% if holdingPage.backgroundImage|length > 0 %}
+  {% set bgImage = holdingPage.backgroundImage.first().url %}
+{% else %}
+  {% set bgImage = '' %}
+{% endif %}
+
+<div id="PageContainer" class="Homepage" style="background-image: url('{{bgImage}}')">
+  
+  <header class="Header">
+    <h1><img src="{{craft.config.environmentVariables.assetsUrl}}assets/logos/violet_logo.svg" alt="Violet" /></h1>
+  </header>
+
+  <button id="MenuButton" class="MenuButton">
+    <div class="Line"></div>
+    <div class="Line Line--Middle"></div>
+    <div class="Line"></div>
+  </button>
+
+  <div class="Socials">
+    <a href="{{socials.instagramLink}}" target="_blank" class="Socials__Item"><i class="icon-instagram"></i></a>
+    <a href="{{socials.facebookLink}}" target="_blank" class="Socials__Item"><i class="icon-facebook"></i></a>
+    <a href="{{socials.twitterLink}}" target="_blank" class="Socials__Item"><i class="icon-twitter"></i></a>
+  </div>
+
+  <div class="CurrentIssue">
+    <span>{{holdingPage.currentIssue}}</span>
+  </div>
+
+  <div class="PageInfo">
+    <h2>{{holdingPage.heading}}</h2>
+    {% if socials.newsletter is not empty %}
+    <div id="NewsletterButton" class="NewsletterBox">
+      <span class="NewsletterBox__Header NewsletterBox__Header--Closed">{{newsletter.signUp|default('Sign Up')}}</span>
+      <span class="NewsletterBox__Header NewsletterBox__Header--Open">{{newsletter.heading}}</span>
+      <form id="form" class="NewsletterBox__Form" action="{{socials.newsletter}}" name="mc-embedded-subscribe-form" method="post" target="_blank" novalidate>
+        <div class="NewsletterBox__FormItem">
+          <input id="email" name="EMAIL" type="email" autocomplete="off" placeholder="{{newsletter.placeholder|default('Email')}}" />  
+        </div>
+        <div class="NewsletterBox__FormItem">
+          <input name="submit" type="submit" value="{{newsletter.submit|default('Submit')}}" />
+        </div>
+      </form>
+    </div>
+    {% endif %}
+  </div>
+
+</div>
+{% endblock %}

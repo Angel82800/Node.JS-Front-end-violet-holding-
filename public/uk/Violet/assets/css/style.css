@@ -1,0 +1,1507 @@
+@font-face {
+    font-family: 'desktopnexus';
+    src:
+            url('../fonts/Grotex/Grotex.otf?alijnh') format('Grotex'),
+            url('../fonts/HeroinePro-Regular/HeroinePro-Regular.otf?alijnh') format('HeroinePro');
+            url('../fonts/Vremena Grotesk/VremenaGrotesk.otf') format('VremenaGrotesk');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body{
+    background-color: white;
+}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.page-left{
+    position: absolute;
+    width: 5vw;
+    height: 100%;
+}
+
+.calandar{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: Grotex;
+    font-size: 2.0vw;
+    line-height: 1.33;
+    letter-spacing: 1.4px;
+    color: #000000;
+    margin-top: 7vw;
+}
+
+.Stories-Weekly-Inte{
+    width: 28vw;
+    height: 1.7vw;
+    font-family: Grotex;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.header-str{
+    /*padding-left: 18vw;*/
+    padding-top: 1.3vw;
+    padding-bottom: 3.5vw;
+}
+
+.homepage_layer {
+    width: 36px;
+    height: 56px;
+    font-family: HeroinePro;
+    font-size: 48px;
+    line-height: 1.17;
+    letter-spacing: 2.1px;
+    color: #000000;
+}
+
+.homepage_The-Petition-Site {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.dashboard-first-dialog{
+    border-bottom-width: 1px;
+    border-bottom-color: #979797;
+    border-bottom-style: solid;
+}
+
+.homepage_card{
+    width: 24vw;
+    height: 30.4vw;
+    background-color: #fcfcfc;
+}
+
+.stories{
+    writing-mode: vertical-lr;
+    width: 8.5vw;
+    /*height: 3.5vw;*/
+    transform: rotate(180deg);
+    font-family: Grotex;
+    font-size: 2.6vw;
+    line-height: 1.33;
+    letter-spacing: 0.1vw;
+    color: #000000;
+}
+
+.Vive-Le-Feminin{
+    width: 30vw;
+    height: 9.4vw;
+    font-family: HeroinePro;
+    font-size: 4.7vw;
+    line-height: 1;
+    letter-spacing: 0.2vw;
+    color: #000000;
+}
+
+.Photography-Styling{
+    width: 5.5vw;
+    height: 4.5vw;
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 1.17;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.Stacey-Mark{
+    width: 6.6vw;
+    height: 1.7vw;
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+    border-bottom-color: #c02a41;
+    border-bottom-width:1px;
+    border-bottom-style: solid;
+}
+
+.homepage_Sarah-Sophie-Flicker {
+    width: 38vw;
+    height: 11.7vw;
+    font-family: Grotex;
+    font-size: 1.46vw;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+    color: #000000;
+}
+
+.Read-More-Copy-5 {
+    width: 6.2vw;
+    height: 1.75vw;
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+    border-bottom-color: #c02a41;
+    border-bottom-width:1px;
+    border-bottom-style: solid;
+}
+
+.August-15-2017 {
+    width: 7vw;
+    height: 1.75vw;
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.Week-27 {
+    width: 3.7vw;
+    height: 1.7vw;
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.Louise-ONeill {
+    /*width: 363px;*/
+    /*height: 44px;*/
+    font-family: HeroinePro;
+    font-size: 2.6vw;
+    line-height: 1.22;
+    letter-spacing: 1.6px;
+    color: #000000;
+}
+
+.Louise-ONeill-is-an {
+    /*width: 290px;*/
+    /*height: 192px;*/
+    font-family: Grotex;
+    font-size: 1.1vw;
+    line-height: 2;
+    letter-spacing: 0.7px;
+    color: #000000;
+}
+
+.By {
+    /*width: 19px;*/
+    /*height: 24px;*/
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.Rosalind-Jana {
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+    border-bottom: solid 1px #c02a41;
+}
+
+.Read-More {
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    /*line-height: 2;*/
+    letter-spacing: 0.5px;
+    color: #000000;
+    float: right;
+    border-bottom: solid 1px #c02a41;
+}
+
+.In-Conversation {
+    /*width: 234px;*/
+    /*height: 48px;*/
+    /*transform: rotate(-90deg);*/
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: Grotex;
+    font-size: 2.6vw;
+    line-height: 1.33;
+    letter-spacing: 1.4px;
+    color: #000000;
+    width: 8.5vw;
+}
+
+.Footnotes {
+    /*width: 192px;*/
+    /*height: 48px;*/
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: Grotex;
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 1.4px;
+    color: #000000;
+}
+
+.PR {
+    font-family: Calibre;
+    font-size: 0.85vw;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: #000000;
+
+}
+
+.HomePage_Rectangle {
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 0.2vw;
+    border: solid 1px #0f0f0f;
+    margin-left: 14vw;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Homepage_In-Conversation-Mar {
+    width: 17.5vw;
+    height: 7vw;
+    font-family: HeroinePro;
+    font-size: 1.7vw;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.Homepage_NC-Law-Allows-Rapist {
+    width: 17.5vw;
+    height: 5.27vw;
+    font-family: Grotex;
+    font-size: 1vw;
+    line-height: 1.71;
+    letter-spacing: 0.6px;
+    color: #000000;
+}
+
+.More-Footnotes {
+    /*width: 93px;*/
+    /*height: 24px;*/
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+    float: right;
+    border-bottom: solid 1px #c02a41;
+    margin-bottom: 9.7vw;
+}
+
+.Violet-Publis {
+     font-family: AppleSystemUIFont;
+     font-size: 0.85vw;
+     line-height: 2;
+     letter-spacing: 0.5px;
+     color: #ff94c0;
+}
+
+.SECTION-TAG-Copy-6 {
+    font-family: Grotex;
+    font-size: 1.17vw;
+    line-height: 2;
+    letter-spacing: 0.7px;
+    color: #ff94c0;
+}
+
+.UK {
+    font-family: Grotex;
+    font-size: 1.17vw;
+    line-height: 2;
+    letter-spacing: 0.7px;
+    color: #ff94c0;
+}
+
+.View-legal-policies {
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    letter-spacing: 0.5px;
+    color: #ff94c0;
+    border-bottom: solid 1px #ff94c0;
+}
+
+.A-daily-roundup-of-h {
+    /*width: 468px;*/
+    /*height: 72px;*/
+    font-family: Grotex;
+    font-size: 1.7vw;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    color: #000000;
+}
+
+.Monday {
+    font-family: Calibre;
+    font-size: 0.85vw;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: #000000;
+}
+
+.th-July {
+    font-family: HeroinePro;
+    font-size: 1.7vw;
+    line-height: 1.83;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.Share {
+    font-family: Grotex;
+    font-size: 1.17vw;
+    line-height: 2;
+    letter-spacing: 0.7px;
+    color: #000000;
+}
+
+.layer {
+    font-family: HeroinePro;
+    font-size: 2.63vw;
+    line-height: 1.22;
+    letter-spacing: 1.6px;
+    color: #000000;
+}
+
+.The-Petition-Site {
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.In-Conversation-Mar {
+    font-family: HeroinePro;
+    font-size: 1.7vw;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.British-potter-Chris {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    color: #000000;
+}
+
+.Read-this-on {
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.londoncraftweekcom-copy {
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.NC-Law-Allows-Rapist {
+    font-family: Grotex;
+    font-size: 1.17vw;
+    line-height: 2;
+    letter-spacing: 0.7px;
+    color: #000000;
+}
+
+.NC-Law-Allows-Rapist .text-style-1 {
+    font-family: LucidaGrande;
+}
+
+.Anoushka-Shankar-Mes {
+    /*width: 592px;*/
+    /*height: 224px;*/
+    font-family: HeroinePro;
+    font-size: 3.5vw;
+    line-height: 1.17;
+    letter-spacing: 0.15vw;
+    color: #000000;
+}
+
+.August-15-2017 {
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.By {
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.Sarah-Sophie-Flicker {
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    letter-spacing: 0.5px;
+    color: #000000;
+    border-bottom: solid 1px #c02a41;
+}
+
+.Special-guests-atten {
+    font-family: Grotex;
+    font-size: 1.46vw;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+    color: #000000;
+}
+
+.Last-night-at-the {
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.According-to-recent {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    color: #000000;
+}
+
+.Tour-Dates {
+    font-family: HeroinePro;
+    font-size: 1.7vw;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.Tue-15-Aug-Royal-A {
+    font-family: Grotex;
+    font-size: 1.17vw;
+    line-height: 2;
+    letter-spacing: 0.7px;
+    color: #000000;
+}
+
+.Back-to-Footnotes {
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+    border-bottom: solid 1px #c02a41;
+}
+
+.Related-Content {
+    font-family: Grotex;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.7px;
+    color: #000000;
+}
+
+.August-15-2017 {
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.Rectangle-Copy-3 {
+    width: 100%;
+    height: 12.12vw;
+    background-color: #d8d8d8;
+    margin-top: 1.09vw;
+}
+
+.Its-like-I-live-her {
+    font-family: HeroinePro;
+    font-size: 1.7vw;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.article_Lorem-ipsum-dolor-si {
+    font-family: Calibre;
+    font-size: 1.02vw;
+    line-height: 1.71;
+    letter-spacing: 0.9px;
+    color: #000000;
+}
+
+.Weekly-conversations {
+    font-family: Grotex;
+    font-size: 1.7vw;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #000000;
+}
+
+.Rectangle {
+    width: 11.6vw;
+    height: 2.3vw;
+    border: solid 1px #0f0f0f;
+}
+
+.Week-27-August-15 {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+}
+
+.Louise-ONeill {
+    font-family: HeroinePro;
+    font-size: 3.5vw;
+    line-height: 1.17;
+    letter-spacing: 2.1px;
+    text-align: left;
+    color: #000000;
+}
+
+.Author {
+    font-family: Grotex;
+    font-size: 1.75vw;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #000000;
+}
+
+.-minute-read {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+}
+
+.Louise-ONeill-is-an {
+    font-family: Grotex;
+    font-size: 1.7vw;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #000000;
+}
+
+.Hello-So-to-begin {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #262626;
+}
+
+.Its-funny-When-Im {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #000000;
+}
+
+.Yes-I-think-theres {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #262626;
+}
+
+.Yes-And-I-find-when {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #000000;
+}
+
+.Louises-top-10 {
+    font-family: HeroinePro;
+    font-size: 1.7vw;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #000000;
+}
+
+.Books {
+    font-family: Grotex;
+    font-size: 1.17vw;
+    line-height: 2;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #000000;
+}
+
+/*Slider*/
+.multi-item-carousel .carousel-inner > .item {
+    -webkit-transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out left;
+}
+.multi-item-carousel .carousel-inner .active.left {
+    left: -16.5%;
+}
+.multi-item-carousel .carousel-inner .active.right {
+    left: 16.5%;
+}
+.multi-item-carousel .carousel-inner .next {
+    left: 16.5%;
+}
+.multi-item-carousel .carousel-inner .prev {
+    left: -16.5%;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .multi-item-carousel .carousel-inner > .item {
+        -webkit-transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out left;
+        -webkit-transition: 500ms ease-in-out all;
+        transition: 500ms ease-in-out all;
+        -webkit-backface-visibility: visible;
+        backface-visibility: visible;
+        -webkit-transform: none!important;
+        transform: none!important;
+    }
+}
+.multi-item-carousel .carouse-control.left,
+.multi-item-carousel .carouse-control.right {
+    background-image: none;
+}
+/*End*/
+
+/*Slider1*/
+.multi-item-carousel1 .carousel-inner > .item {
+    -webkit-transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out left;
+}
+.multi-item-carousel1 .carousel-inner .active.left {
+    left: -33%;
+}
+.multi-item-carousel1 .carousel-inner .active.right {
+    left: 33%;
+}
+.multi-item-carousel1 .carousel-inner .next {
+    left: 33%;
+}
+.multi-item-carousel1 .carousel-inner .prev {
+    left: -33%;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .multi-item-carousel1 .carousel-inner > .item {
+        -webkit-transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out left;
+        -webkit-transition: 500ms ease-in-out all;
+        transition: 500ms ease-in-out all;
+        -webkit-backface-visibility: visible;
+        backface-visibility: visible;
+        -webkit-transform: none!important;
+        transform: none!important;
+    }
+}
+.multi-item-carousel1 .carouse-control.left,
+.multi-item-carousel1 .carouse-control.right {
+    background-image: none;
+}
+
+.carousel-inner1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+/*End1*/
+
+.layer {
+    font-family: HeroinePro;
+    font-size: 1.3vw;
+    line-height: 1.78;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #000000;
+}
+
+.Trainwreck {
+    font-family: Calibre;
+    font-size: 1vw;
+    font-weight: 600;
+    line-height: 1.71;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #262626;
+}
+
+.Sady-Doyle {
+    font-family: Calibre;
+    font-size: 1vw;
+    line-height: 1.71;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #000000;
+}
+
+.Buy-Online {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+    border-bottom: solid 1px #c02a41;
+    width: fit-content;
+}
+
+.Oh-yes-Talking-of-w {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #262626;
+}
+
+.With-my-first-two-bo {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #000000;
+}
+
+.Given-that-you-write {
+    font-family: Calibre;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #262626;
+}
+
+.God-I-wish-I-could {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #000000;
+}
+
+.Is-that-important-to {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #262626;
+}
+
+.Ive-been-accused-h {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #000000;
+}
+
+.Sarah-Sophie-Flicker1 {
+    font-family: Grotex;
+    font-size: 1.7vw;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #000000;
+}
+
+.Yes-and-working-out {
+    width: 592px;
+    height: 144px;
+    font-family: Calibre;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #262626;
+}
+
+.I-said-this-during-m {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #000000;
+}
+
+.It-was-Elle-I-love {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #262626;
+}
+
+.Its-great-Shes-so {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #000000;
+}
+
+.Im-nodding-very-ent {
+    font-family: Calibre;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #262626;
+}
+
+.I-was-at-a-publishin {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #000000;
+}
+
+.SECTION-TAG {;
+    font-family: Grotex;
+    font-size: 1.17vw;
+    line-height: 2;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #ff94c0;
+}
+
+.Louises-Matches-Wis {
+    font-family: HeroinePro;
+    font-size: 1.7vw;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #000000;
+}
+
+.ISA-ARFEN {
+    font-family: Calibre;
+    font-size: 1vw;
+    font-weight: 600;
+    line-height: 1.71;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #262626;
+}
+
+.Polka-dot-flocked-ga {
+    font-family: Calibre;
+    font-size: 1vw;
+    line-height: 1.71;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #000000;
+}
+
+.interview_layer {
+    font-family: Calibre;
+    font-size: 1vw;
+    line-height: 1.71;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #000000;
+}
+
+.Related-Content {
+    font-family: Grotex;
+    font-size: 1.17vw;
+    line-height: 2;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #000000;
+}
+
+.Week-27 {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+}
+
+.Louise-ONeill {
+    font-family: HeroinePro;
+    font-size: 1.7vw;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #000000;
+}
+
+.Louise-ONeill-is-an {
+    font-family: Grotex;
+    font-size: 1.17vw;
+    line-height: 2;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #000000;
+}
+
+.Sarah-Sophie-Flicker-Copy-3 {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+    border-bottom: solid 1px #c02a41;
+}
+.Read-More {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+}
+
+.Vive-Le-Feminin1 {
+    font-family: HeroinePro;
+    font-size: 3.5vw;
+    line-height: 1.17;
+    letter-spacing: 2.1px;
+    text-align: left;
+    color: #000000;
+}
+
+.story_Sarah-Sophie-Flicker {
+    font-family: Grotex;
+    font-size: 1.7vw;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #000000;
+}
+
+.story_Interview {
+    font-family: Calibre;
+    font-size: 0.85vw;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #000000;
+}
+.story_Sarah-Sophie-Flicker1 {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+}
+
+.story_Thats-amazing {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #262626;
+}
+
+.Lily-Allen {
+    font-family: HeroinePro;
+    font-size: 3.5vw;
+    line-height: 1.17;
+    letter-spacing: 2.1px;
+    text-align: left;
+    color: #000000;
+}
+
+.author_Musician {
+    font-family: Grotex;
+    font-size: 1.7vw;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #000000;
+}
+
+.author_Lily-Allen-is-an-Eng {
+    font-family: Grotex;
+    font-size: 1.7vw;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #000000;
+}
+
+.author_Aug-2017 {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+}
+
+.author_Its-like-I-live-her {
+    font-family: HeroinePro;
+    font-size: 1.7vw;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #000000;
+}
+
+.author_Lorem-ipsum-dolor-si {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #000000;
+}
+
+.author_By {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+}
+
+.author_Lily-Allen {
+    width: 54px;
+    height: 14px;
+    font-family: VremenaGrotesk;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+}
+
+.author_Read-more {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+}
+
+.If-we-could-be-every {
+    font-family: Grotex;
+    font-size: 1.7vw;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #000000;
+}
+
+.Most-recent {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+}
+
+.music-copy {
+    font-family: Calibre;
+    font-size: 0.85vw;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #000000;
+}
+
+.-Mar {
+    font-family: HeroinePro;
+    font-size: 4.68vw;
+    line-height: 1;
+    letter-spacing: 2.8px;
+    text-align: left;
+    color: #000000;
+}
+
+.-Mar1 {
+   font-family: HeroinePro;
+   font-size: 1.17vw;
+   line-height: 2;
+   letter-spacing: 0.7px;
+   text-align: left;
+   color: #000000;
+}
+
+.Green-Man-Festival-w {
+    width: 100%;
+    height: 10.5vw;
+    font-family: Grotex;
+    font-size: 1.7vw;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #000000;
+    z-index: 1;
+}
+
+.Wales-UK-Copy-4 {
+    font-family: Calibre;
+    font-size: 1vw;
+    line-height: 1.71;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #000000;
+}
+
+.calendar-new{
+    position: absolute;
+    margin-top: 8.7vw;
+    margin-left: 1.5vw;
+    font-size: 1.5vw;
+    writing-mode: vertical-lr;
+    transform: rotate(250deg);
+    color: #9777A0;
+}
+
+.More-features {
+    font-family: Unna;
+    font-size: 1.3vw;
+    font-style: italic;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #25213e;
+    background-color: transparent;
+    border: 0px;
+    margin-left: 1.5vw;
+}
+
+input:focus{
+    outline: none;
+}
+
+.Share-via {
+    opacity: 0.95;
+    font-family: Grotex;
+    font-size: 1.46vw;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+    text-align: left;
+    color: #ff94c0;
+}
+
+.multi_Calendar {
+    font-family: HeroinePro;
+    font-size: 1.7vw;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #000000;
+}
+
+.multi-Aug {
+    width: 202px;
+    height: 64px;
+    font-family: HeroinePro;
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: 2.8px;
+    text-align: left;
+    color: #000000;
+}
+
+.multi-Events {
+    font-family: Grotex;
+    font-size: 1.17vw;
+    line-height: 2;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #000000;
+}
+
+.multi_row{
+    border: solid 1px #000000;
+    width: 100%;
+    height: 14.78vw;
+}
+
+.multi_Green-Man-Festival-w {
+    font-family: HeroinePro;
+    font-size: 1.7vw;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #000000;
+}
+
+.multi_Art {
+    font-family: Calibre;
+    font-size: 0.85vw;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #000000;
+}
+
+.multi_London-UK {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+}
+
+.multi_wwwtateorguk {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+    border-bottom: solid 1px #000000;
+}
+
+.multi_Optional-Subtext-des {
+    font-family: Calibre;
+    font-size: 1vw;
+    line-height: 1.71;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #000000;
+}
+
+.Credits {
+    font-family: HeroinePro;
+    font-size: 1.7vw;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #ff94c0;
+}
+
+.Art-Director {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #ff94c0;
+}
+
+.About {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: Grotex;
+    font-size: 2.63vw;
+    line-height: 1.33;
+    letter-spacing: 1.4px;
+    text-align: left;
+    color: #554b8e;
+}
+
+.about_Lorem-ipsum-dolor-si {
+    font-family: Grotex;
+    font-size: 1.7vw;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #554b8e;
+}
+
+.about_Get-in-touch {
+    font-family: HeroinePro;
+    font-size: 1.7vw;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #554b8e;
+}
+
+.about_editorialviolet-boo {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #554b8e;
+}
+
+.about_editorialviolet-boo1 {
+    font-family: Calibre;
+    font-size: 1.17vw;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #554b8e;
+}
+
+.about_Violet-Book-73-Farri {
+    font-family: Calibre;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #554b8e;
+}
+
+.about_More-features {
+    font-family: Unna;
+    font-size: 1.3vw;
+    font-style: italic;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #554b8e;
+    background-color: transparent;
+    border: 0px;
+    margin-left: 0.85vw;
+}
+
+.about_This-site-uses-cooki {
+    font-family: Grotex;
+    font-size: 1.7vw;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #ff94c0;
+}
+
+.What-is-PR-content {
+    font-family: HeroinePro;
+    font-size: 2.7vw;
+    line-height: 1.22;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #ff94c0;
+}
+
+.Lorem-ipsum-dolor-si {
+    font-family: Grotex;
+    font-size: 1.46vw;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+    text-align: left;
+    color: #ff94c0;
+}
+
+.gallery_layer {
+    font-family: Unna;
+    font-size: 1.3vw;
+    font-style: italic;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.gallery_Lorem-ipsum-dolor-si {
+    font-family: VremenaGrotesk;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+.homepage_card.page1{
+    z-index: 1;
+}
+
+.homepage_card.page2{
+    z-index: 2;
+}
+
+.homepage_card.page3{
+    z-index: 3;
+}
+
+.homepage_card.page4{
+    z-index: 4;
+}
+
+.homepage_card:hover{
+    z-index: 5;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.span6 ul li {
+    width: 31%;
+}
+
+.Most-recent {
+    font-family: AppleSystemUIFont;
+    font-size: 0.85vw;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
